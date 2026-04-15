@@ -42,3 +42,12 @@ a.buttonslit{
     font-size:x-large;
     margin-left:550px
 }
+form{
+    display:inline-block;
+    margin-left:900px;
+    margin-top:400px;
+}
+a.slithome{
+    display:inline-block;
+    margin-top:100px
+}

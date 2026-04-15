@@ -1,0 +1,41 @@
+body {
+    background-color: aquamarine;
+}
+h1 {
+    color:darkcyan;
+    text-align:center;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium
+}
+li {
+    color:red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+a.youtube {
+    text-align:right;
+    display:inline-block;
+    position:fixed;
+    margin-left:850px;
+}
+a.buttonkatt {
+    display:inline-block;
+    position:fixed;
+    margin-top:250px;
+    font-size:x-large;
+    margin-left:800px
+
+}
+img.box{
+    margin-left:475px;
+}
+a.buttonhem{
+    display:inline-block;
+    position:fixed;
+    margin-top:500px;
+}
+button.box{
+    border:none;
+    color:aquamarine
+}

@@ -35,3 +35,10 @@ a.buttonhem{
     position:fixed;
     margin-top:500px;
 }
+a.buttonslit{
+    display:inline-block;
+    position:fixed;
+    margin-top:250px;
+    font-size:x-large;
+    margin-left:550px
+}

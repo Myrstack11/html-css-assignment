@@ -4,25 +4,31 @@
     <link rel="stylesheet" href="style.css">
     <script>
         function testIfCatIsAlive() {
-           let x=(Math.floor(Math.random()*10/4));
-           if (x==0){
-            window.open(http://127.0.0.1:5500/bad.html)
+            let x = (Math.floor(Math.random() * 10 / 4));
+            if (x == 0) {
+                window.location.href = "http://127.0.0.1:5500/bad.html"
            }
+           if (x == 1) {
+                window.location.href = "http://127.0.0.1:5500/good.html"
            }
-        
+        }
+
     </script>
 </head>
-    <body>
-        <a href="/index.html" class="buttonhem" style="border-style:solid;color:darkslategray">home button</a>
-        <h1 style="border-style:solid;color:darkcyan">Schrödingers katt</h1>
-        <button class="box" onclick="testIfCatIsAlive()" >
-            <img class="box" src="/box.png" alt="box" style="height:300px;width:300px">
-        </button>
-        <h1>Det finns en katt i lådan och man vet inte om den är levande eller död utan att öppna den.</h1>
-        <h1>Katten anses då att vara både levande och död.</h1>
-        <h1>Varför inte öppna lådan och se?</h1>
 
-    </body>
+<body>
+    <a href="/index.html" class="buttonhem" style="border-style:solid;color:darkslategray">home button</a>
+    <h1 style="border-style:solid;color:darkcyan">Schrödingers katt</h1>
+    <button class="box" onclick="testIfCatIsAlive()">
+        <img class="box" src="/box.png" alt="box" style="height:300px;width:300px">
+    </button>
+    <h1>Det finns en katt i lådan och man vet inte om den är levande eller död utan att öppna den.</h1>
+    <h1>Katten anses då att vara både levande och död.</h1>
+    <h1>Varför inte öppna lådan och se?</h1>
+
+    
+
+</body>
 
 
 

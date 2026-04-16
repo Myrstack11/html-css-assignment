@@ -5,12 +5,27 @@
 </head>
 
 <body>
-    <div>
-        <form>
-            <input type="checkbox" class="syn" id="syn">
-            <label for="syn">Är det någon som kollar?</label>
-        </form>
+    <script>
+        function validate() {
+            if (document.getElementById("wave").checked) { 
+                document.getElementById("wave").src = "waveless.png"
+            } else {
+                document.getElementById("wave").src = "wavefull.png"
+            }
+            
+        }
+    </script>
+    <div class="experiment-wrapper">
+        <div class="experiment">
+            <img src="/wavefull.png" style="width:300px;height:200px" class="wave" id="wave">
+            <img src="/plate.png" style="width:300px;height:100px" class="plate">
+            <img src="emmiter.png" style="width:100px;height:150px" class="emitter">
+        </div>
     </div>
+    <form>
+        <input type="checkbox" class="syn" id="syn" onclick="validate()">
+        <label for="syn">Är det någon som kollar?</label>
+    </form>
     <a href="/index.html" class="slithome" style="border-style:solid;color:darkslategray">home button</a>
 
 

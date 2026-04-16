@@ -28,7 +28,8 @@ a.buttonkatt {
 
 }
 img.box{
-    margin-left:475px;
+    position:absolute;
+    left:37%
 }
 a.buttonhem{
     display:inline-block;
@@ -44,10 +45,47 @@ a.buttonslit{
 }
 form{
     display:inline-block;
-    margin-left:900px;
-    margin-top:400px;
+    position:absolute;
+    bottom:30%;
+    right:30%
 }
 a.slithome{
     display:inline-block;
-    margin-top:100px
+    position: absolute;
+    bottom: 4%;
+    left:2%
+}
+.experiment-wrapper {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 25px;
+    bottom:40%;
+    position:absolute;
+    right:37%
+}
+.experiment {
+    position: relative;
+}
+img.plate{
+    display:inline-block;
+}
+img.emitter{
+    display:inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    bottom: 0;
+}
+.headerbox{
+    margin-top:25%
+
+}
+button{
+    color:aquamarine;
+}
+.wave{
+    position: absolute;
+    display:inline-block;
+    left: 50%;
+    transform: translate(-50%, -90%)
 }

@@ -21,10 +21,10 @@ a.youtube {
 }
 a.buttonkatt {
     display:inline-block;
-    position:fixed;
-    margin-top:250px;
+    position:absolute;
     font-size:x-large;
-    margin-left:800px
+    left: 5%;
+    bottom: 5%;
 
 }
 img.box{
@@ -39,9 +39,9 @@ a.buttonhem{
 a.buttonslit{
     display:inline-block;
     position:fixed;
-    margin-top:250px;
     font-size:x-large;
-    margin-left:550px
+    bottom: 5%;
+    left: 20%;
 }
 form{
     display:inline-block;
@@ -113,4 +113,17 @@ img.shock{
     position: absolute;
     right: 15%;
     top: 30%;
+}
+a.buttoncount{
+    display:inline-block;
+    position:fixed;
+    font-size:x-large;
+    bottom: 5%;
+    left: 39%;
+}
+a.homecount{
+    display:inline-block;
+    position:fixed;
+    bottom: 5%;
+    left: 5%;
 }

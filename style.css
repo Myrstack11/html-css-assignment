@@ -59,7 +59,7 @@ a.slithome{
     display: flex;
     margin-bottom: 25px;
     padding: 25px;
-    bottom:40%;
+    bottom:30%;
     position:absolute;
     right:37%
 }
@@ -88,4 +88,29 @@ button{
     display:inline-block;
     left: 50%;
     transform: translate(-50%, -90%)
+}
+button.eye{
+    position: absolute;
+    left: 60%;
+    top: 60%;
+}
+img.eyepic{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: inline-block;
+   
+}
+h2{
+    color: darkcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2.surprise{
+    right: 0%;
+    top: 10%;
+    position: absolute;
+}
+img.shock{
+    position: absolute;
+    right: 15%;
+    top: 30%;
 }

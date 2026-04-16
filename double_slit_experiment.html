@@ -6,26 +6,49 @@
 
 <body>
     <script>
-        function validate() {
-            if (document.getElementById("wave").checked) { 
+
+        let x = true
+        function eyeswitch() {
+            if (!x) {
+                document.getElementById("eyepic").src = "open_eye.png"
                 document.getElementById("wave").src = "waveless.png"
+                x = true
             } else {
+                document.getElementById("eyepic").src = "closed_eye.png"
                 document.getElementById("wave").src = "wavefull.png"
+                document.getElementById("surprise").innerHTML = "Wow! De blir till vågor! Det hade jag inte förväntat mig!"
+                document.getElementById("shock").src = "shock.png"
+                x = false
             }
-            
+            console.log(x)
         }
+        
+        
+
+
+
+
+
     </script>
+    <h1 style="border-style: solid;">Double slit experiment</h2>
+    <h2 style="width: 400px;">Double slit experiment är gjord för att bevisa att en
+        elektron eller photon både fungerar som partikel och
+        våg. Med en observator ser man två partiklar och två
+        linjer, kolla vad som händer om man tar bort observatorn.
+    </h2>
+    <h2 style="width: 400px;" class="surprise" id="surprise">
+    </h2>
+    <img class="shock" id="shock"  src="empty_space.png" style="height: 200px; width: 200px;">
     <div class="experiment-wrapper">
         <div class="experiment">
-            <img src="/wavefull.png" style="width:300px;height:200px" class="wave" id="wave">
+            <img src="/waveless.png" style="width:300px;height:200px" class="wave" id="wave">
             <img src="/plate.png" style="width:300px;height:100px" class="plate">
             <img src="emmiter.png" style="width:100px;height:150px" class="emitter">
         </div>
     </div>
-    <form>
-        <input type="checkbox" class="syn" id="syn" onclick="validate()">
-        <label for="syn">Är det någon som kollar?</label>
-    </form>
+    <button class="eye" id="eye" style="width: 55px;height: 55px;" onclick="eyeswitch()">
+        <img src="/open_eye.png" style="width: 50px;height: 50px" class="eyepic" id="eyepic">
+    </button>
     <a href="/index.html" class="slithome" style="border-style:solid;color:darkslategray">home button</a>
 
 
@@ -35,3 +58,16 @@
 
 
 </html>
+
+
+<!--if (document.getElementById("syn").checked) { 
+                document.getElementById("wave").src = "waveless.png"
+            } else {
+                document.getElementById("wave").src = "wavefull.png"
+            }
+<form>
+        <input type="checkbox" class="syn" id="syn" onclick="validate()">
+        <label for="syn">Är det någon som kollar?</label>
+    </form>
+
+Om button inte är lika roligt-->

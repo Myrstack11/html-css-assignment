@@ -81,7 +81,7 @@ img.emitter{
 
 }
 button{
-    color:aquamarine;
+    color: gray;
 }
 .wave{
     position: absolute;
@@ -174,4 +174,34 @@ img.e8{
     position:absolute;
     bottom: 10%;
     left: 86%;
+}
+h2.HowMany{
+    color:darkslategray;
+    font-size: large;
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    top: 40%;
+}
+input.numb{
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+}
+button.submit{
+    display: inline-block;
+    position: absolute;
+    left: 93%;
+    top: 50%;
+}
+p.row{
+    display: inline-block;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: x-large;
+    color: darkslategray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }

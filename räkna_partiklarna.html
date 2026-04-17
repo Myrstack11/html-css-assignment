@@ -6,14 +6,65 @@
     <a href="/index.html" class="homecount" style="border-style:solid;color:darkslategray">home button</a>
     <h1>Räkna partiklarna!</h1>
     <h2 style="width: 300px;">Att räkna partiklar kan vara svårt för at en partikel kan vara på olika ställen samtidigt, men att ge det ett försök kan ju inte skada.</h2>
-    <img class="e1" src="empty_space.png" style="height: 75px; width: 75px;"> <!--jag tog bort bilden-->
-    <img class="e2" src="empty_space.png" style="height: 75px; width: 75px;">
-    <img class="e3" src="empty_space.png" style="height: 75px; width: 75px;"> 
-    <img class="e4" src="empty_space.png" style="height: 75px; width: 75px;">
-    <img class="e5" src="empty_space.png" style="height: 75px; width: 75px;"> <!--jag tog bort bilden-->
-    <img class="e6" src="empty_space.png" style="height: 75px; width: 75px;">
-    <img class="e7" src="empty_space.png" style="height: 75px; width: 75px;"> 
-    <img class="e8" src="empty_space.png" style="height: 75px; width: 75px;">
+    <img class="e1" id="e1" src="empty_space.png" style="height: 75px; width: 75px;">
+    <img class="e2" id="e2" src="empty_space.png" style="height: 75px; width: 75px;">
+    <img class="e3" id="e3" src="empty_space.png" style="height: 75px; width: 75px;"> 
+    <img class="e4" id="e4" src="empty_space.png" style="height: 75px; width: 75px;">
+    <img class="e5" id="e5" src="empty_space.png" style="height: 75px; width: 75px;">
+    <img class="e6" id="e6" src="empty_space.png" style="height: 75px; width: 75px;">
+    <img class="e7" id="e7" src="empty_space.png" style="height: 75px; width: 75px;"> 
+    <img class="e8" id="e8" src="empty_space.png" style="height: 75px; width: 75px;">
+    <button onclick="start()" type="button">Start</button>
+    <h2 id="HowMany" style="visibility:hidden;" class="HowMany">Hur många finns det?</h2>
+    <input id="numb" style="visibility: hidden;" class="numb">
+    <button id="submit" style="visibility: hidden;" class="submit" onclick="answer()">Svara</button>
+    <p id="row" class="row" style="visibility: hidden;"></p>
+
+
+    <script>
+        function start(){
+            document.getElementById("e1").src = "electron.png"
+            document.getElementById("e2").src = "electron.png"
+            document.getElementById("e3").src = "electron.png"
+            document.getElementById("e4").src = "electron.png"
+            document.getElementById("e5").src = "electron.png"
+            document.getElementById("e6").src = "electron.png"
+            document.getElementById("e7").src = "electron.png"
+            document.getElementById("e8").src = "electron.png"
+            document.getElementById("HowMany").style = "visibility:visible"
+            document.getElementById("numb").style = "visibility:visible"
+            document.getElementById("submit").style = "visibility:visible"
+            document.getElementById("row").style = "visibility:hidden"
+        }
+        function answer() {
+            let x = document.getElementById("numb").value
+
+            let row;
+            if (x!=1){
+                row = "Fel! Rätt svar var 1. Tryck på Start för att försöka igen."
+                document.getElementById("e1").src = "empty_space.png"
+                document.getElementById("e3").src = "empty_space.png"
+                document.getElementById("e4").src = "empty_space.png"
+                document.getElementById("e5").src = "empty_space.png"
+                document.getElementById("e6").src = "empty_space.png"
+                document.getElementById("e7").src = "empty_space.png"
+                document.getElementById("e8").src = "empty_space.png"
+
+            } else {
+                row = "Fel! Rätt svar var 2. Tryck på Start för att försöka igen."
+                document.getElementById("e1").src = "empty_space.png"
+                document.getElementById("e3").src = "empty_space.png"
+                document.getElementById("e4").src = "empty_space.png"
+                document.getElementById("e5").src = "empty_space.png"
+                document.getElementById("e6").src = "empty_space.png"
+                document.getElementById("e8").src = "empty_space.png"
+            }
+            document.getElementById("row").innerHTML = row
+            document.getElementById("row").style = "visibility:visible"
+        }
+        
+    
+   </script>
 
 </body>
 

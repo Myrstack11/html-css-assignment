@@ -212,3 +212,22 @@ a.fort{
     bottom: 5%;
     left: 55%;
 }
+img.quantum{
+    display:inline-block;
+    position:absolute;
+    bottom: 22%;
+    left: 35%;
+}
+p.what{
+    display:inline-block;
+    position:absolute;
+    bottom: 82%;
+    left: 11%;
+}
+img.arrow{
+    display:inline-block;
+    position:absolute;
+    bottom: 70%;
+    left: 14%;
+    rotate: 85deg;
+}

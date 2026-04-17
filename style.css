@@ -231,3 +231,9 @@ img.arrow{
     left: 14%;
     rotate: 85deg;
 }
+button.start{
+    display:inline-block;
+    position:absolute;
+    bottom: 20%;
+    left: 37%;
+}

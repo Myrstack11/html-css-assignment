@@ -237,3 +237,6 @@ button.start{
     bottom: 20%;
     left: 37%;
 }
+img.scaryface{
+    position: absolute;
+}
